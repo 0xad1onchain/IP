@@ -306,6 +306,7 @@ public class TeacherAddEvent extends AppCompatActivity {
             else if(requestCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE)
             {
                 Exception error = result.getError();
+                Log.v("Image Error", error.toString());
             }
         }
     }

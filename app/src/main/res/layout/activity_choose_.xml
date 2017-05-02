@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
             android:background="@color/button"
-            android:text="Student"
+            android:text="Register an Event"
             android:textColor="@android:color/black" />
 
         <Button
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
             android:background="@color/button"
-            android:text="Teacher"
+            android:text="Add your own event"
             android:textColor="@android:color/black" />
 
 
