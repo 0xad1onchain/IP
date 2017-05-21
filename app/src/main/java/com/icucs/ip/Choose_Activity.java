@@ -20,8 +20,8 @@ public class Choose_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_);
 
-        student_button = (Button) findViewById(R.id.student_button_id);
-        teacher_button = (Button) findViewById(R.id.teacher_button_id);
+        student_button = (Button) findViewById(R.id.register_event);
+        teacher_button = (Button) findViewById(R.id.create_event);
 
         FirebaseMessaging.getInstance().subscribeToTopic("news");
 
@@ -30,7 +30,7 @@ public class Choose_Activity extends AppCompatActivity {
         teacher_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent login = new Intent(Choose_Activity.this, TeacherLogin.class);
+                Intent login = new Intent(Choose_Activity.this, TeacherAddEvent.class);
 
                 Choose_Activity.this.startActivity(login);
 

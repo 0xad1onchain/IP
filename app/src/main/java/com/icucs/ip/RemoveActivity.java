@@ -73,7 +73,7 @@ public class RemoveActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Query userfEvents = mDatabase.orderByChild("uid").equalTo(uid);
+        Query userfEvents = mDatabase.child("Events").orderByChild("uid").equalTo(uid);
           firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Data, PostviewHolder>(
                 Data.class,
                 R.layout.list_cards,

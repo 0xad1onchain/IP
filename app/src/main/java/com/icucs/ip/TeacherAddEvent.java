@@ -75,7 +75,7 @@ public class TeacherAddEvent extends AppCompatActivity {
 
     String notice= sendNotification();
     private RadioButton radioButton;
-    final Firebase ref1 = new Firebase("https://post-it-81fe6.firebaseio.com/");
+
     private DatabaseReference mDatabase;
 
 
@@ -86,6 +86,8 @@ public class TeacherAddEvent extends AppCompatActivity {
         setContentView(R.layout.activity_teacher_add_event);
 
         Firebase.setAndroidContext(this);
+
+        final Firebase ref1 = new Firebase("https://post-it-81fe6.firebaseio.com/");
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
         Firebase.setAndroidContext(this);
@@ -97,11 +99,11 @@ public class TeacherAddEvent extends AppCompatActivity {
         Desc = (EditText) findViewById(R.id.description);
         Elig = (EditText) findViewById(R.id.eligiblity);
         Contact = (EditText) findViewById(R.id.contact);
-        imageSelect = (ImageButton) findViewById(R.id.imageSelect);
+
         publish = (Button) findViewById(R.id.publish);
         mImageReference= FirebaseStorage.getInstance().getReference();
         mDataBase= FirebaseDatabase.getInstance().getReference().child("Blog");
-        radioGroup = (RadioGroup) findViewById(R.id.radioType);
+
         dateText = (EditText) findViewById(R.id.editDate);
 //listener
 
@@ -127,16 +129,7 @@ public class TeacherAddEvent extends AppCompatActivity {
         //Get UID of the user
         uid = user.getUid();
 
-        imageSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent galleryIntent = new Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                //galleryIntent.setType("images/*");
-                startActivityForResult(galleryIntent,GALLERY_REQUEST);
-                imageSelect.setImageURI(imageUri);
-            }
-        });
         publish.setOnClickListener(new View.OnClickListener(){
                                              @Override
                                              public void onClick(View view){
@@ -319,7 +312,7 @@ public class TeacherAddEvent extends AppCompatActivity {
 
     public void signout() {
         auth.signOut();
-        Intent intent = new Intent(TeacherAddEvent.this, Choose_Activity.class);
+        Intent intent = new Intent(TeacherAddEvent.this, TeacherLogin.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }

@@ -10,9 +10,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * Created by Adi on 11/02/17.
@@ -47,12 +49,36 @@ public class Tab2 extends Fragment {
 
 
             @Override
-            protected void populateViewHolder(PostviewHolder viewHolder, EventRegisterData model, int position) {
+            protected void populateViewHolder(final PostviewHolder viewHolder, EventRegisterData model, int position) {
                 viewHolder.setTitle(model.getJob());
-                viewHolder.setdesc(model.getEventID());
-                viewHolder.setelig(model.getEventName());
-                viewHolder.setdate(model.getUid());
-                viewHolder.setcontact(model.getJob());
+                String id = model.getEventID();
+                final DatabaseReference uref = mDatabase.child("Events").child(id);
+                uref.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(com.google.firebase.database.DataSnapshot dataSnapshot) {
+                        Data obj = dataSnapshot.getValue(Data.class);
+                        //t.setText(obj.name+" "+obj.phone+" "+obj.stock[5]);
+
+
+                        viewHolder.setcontact(obj.getContact());
+                        viewHolder.setdesc(obj.title);
+                        viewHolder.setelig(obj.date);
+                        viewHolder.setdate(obj.date);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+
+
+                });
+
+
+//                viewHolder.setdesc(model.getEventID());
+//                viewHolder.setelig(model.getEventName());
+//                viewHolder.setdate(model.getUid());
+//                viewHolder.setcontact(model.getJob());
             }
         };
         recylceview.setAdapter(firebaseRecyclerAdapter);

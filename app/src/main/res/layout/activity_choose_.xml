@@ -33,7 +33,7 @@
         <!-- Login Button -->
 
         <Button
-            android:id="@+id/student_button_id"
+            android:id="@+id/register_event"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"
@@ -42,7 +42,7 @@
             android:textColor="@android:color/black" />
 
         <Button
-            android:id="@+id/teacher_button_id"
+            android:id="@+id/create_event"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dip"

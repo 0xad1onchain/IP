@@ -17,72 +17,18 @@
         android:padding="@dimen/activity_horizontal_margin">
 
 
-        <ImageView
-            android:layout_width="137dp"
-            android:layout_height="134dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
-            android:src="@drawable/post" />
-
-
-
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white" />
-
-
-
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textColor="@android:color/white"
-                android:textColorHint="@android:color/white" />
-
-
-        <!-- Login Button -->
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="fill_parent"
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@color/colorAccent"
-            android:text="Login"
-            android:textColor="@android:color/black" />
+            android:id="@+id/google_signin_button">
 
-        <Button
-            android:id="@+id/btn_reset_password"
-            android:layout_width="fill_parent"
+        </com.google.android.gms.common.SignInButton>
+
+        <com.facebook.login.widget.LoginButton
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@null"
-            android:text="Forgot Password?"
-            android:textAllCaps="false"
-            android:textColor="@color/colorAccent" />
-
-        <!-- Link to Login Screen -->
-
-        <Button
-            android:id="@+id/btn_signup"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@null"
-            android:text="Register"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="15dp" />
+            android:layout_width="match_parent"
+            android:textSize="19sp"
+            android:id="@+id/facebook_signin_button"/>
     </LinearLayout>
 
     <ProgressBar

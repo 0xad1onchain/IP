@@ -39,4 +39,5 @@
     <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
     <string name="title_activity_main_scrolling">MainScrolling</string>
 
+    <string name="facebook_id"></string>
 </resources>
