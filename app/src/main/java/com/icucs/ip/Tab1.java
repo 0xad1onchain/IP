@@ -24,9 +24,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
-/**
- * Created by Adi on 11/02/17.
- */
 public class Tab1 extends Fragment {
     private RecyclerView recylceview;
     private DatabaseReference mDatabase;
@@ -34,6 +31,7 @@ public class Tab1 extends Fragment {
     private Query mQuery;
     private String job;
     private FirebaseUser user;
+    FirebaseDatabase database;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
 
@@ -42,7 +40,8 @@ public class Tab1 extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab1, container, false);
         Firebase.setAndroidContext(getContext());
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+
+        mDatabase = database.getInstance().getReference();
         Query userfEvents = mDatabase.child("Events");
         Log.e("Before recycle", "");
         recylceview = (RecyclerView) rootView.findViewById(R.id.list);
