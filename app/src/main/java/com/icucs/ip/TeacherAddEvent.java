@@ -267,7 +267,7 @@ public class TeacherAddEvent extends AppCompatActivity {
                     //ref1.child("post").child(title).setValue(obj);
                     //urltext.setText(downloadUri.toString());
                     mProgress.dismiss();
-                    startActivity(new Intent(TeacherAddEvent.this, MainActivity.class));
+                    startActivity(new Intent(TeacherAddEvent.this, Choose_Activity.class));
                     finish();
 //                    Snackbar.make(view, "Thank you for using Post-It", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 
