@@ -18,8 +18,6 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import com.firebase.client.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
@@ -66,7 +64,7 @@ public class TeacherAddEvent extends AppCompatActivity {
     private EditText Contact;
     private FirebaseAuth.AuthStateListener authListener;
     private FirebaseAuth auth;
-    private RadioGroup radioGroup;
+
     private EditText dateText;
     public String smessage;
     private String type;
@@ -74,7 +72,7 @@ public class TeacherAddEvent extends AppCompatActivity {
             = MediaType.parse("application/json; charset=utf-8");
 
     String notice= sendNotification();
-    private RadioButton radioButton;
+
 
     private DatabaseReference mDatabase;
 
@@ -211,8 +209,7 @@ public class TeacherAddEvent extends AppCompatActivity {
                     date1 = date1 + "/" + month_x;
                     date1 = date1 + "/" + year_x;
                     //description = description + "\n" + "date :" + date1;
-                    // get selected radio button from radioGroup
-                    int selectedId = radioGroup.getCheckedRadioButtonId();
+                   
                     date = ""+year_x;
                     if (month_x / 10 == 0)
                     {date = date + "0"+month_x;
@@ -229,23 +226,9 @@ public class TeacherAddEvent extends AppCompatActivity {
                     {date = date + day_x;}
 
 
-                    // find the radiobutton by returned id
-                    radioButton = (RadioButton) findViewById(selectedId);
-                    String temp = radioButton.getText().toString();
 
-                    if(temp.equals("Workshop / Event"))
-                    {
-                        //event = true;
-                        type = "event";
-                        Log.d("Type Set ","Event");
-                    }
-                    else
-                    {
-                        type = "intern";
-                        //date1="0";
-                        Log.d("Type Set ","Intern");
 
-                    }
+                    type = "event";
 
                     Data obj = new Data(title, description, eligibility, contact, imgurl, event, uid, type, date1);
                     Random rand = new Random();
