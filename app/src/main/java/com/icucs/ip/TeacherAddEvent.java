@@ -74,22 +74,13 @@ public class TeacherAddEvent extends AppCompatActivity {
     String notice= sendNotification();
 
 
-    private DatabaseReference mDatabase;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher_add_event);
 
-        Firebase.setAndroidContext(this);
-
-        final Firebase ref1 = new Firebase("https://post-it-81fe6.firebaseio.com/");
-        //get firebase auth instance
         auth = FirebaseAuth.getInstance();
-        Firebase.setAndroidContext(this);
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDataBase = FirebaseDatabase.getInstance().getReference();
         mProgress=new ProgressDialog(this);
         mProgress.setCanceledOnTouchOutside(false);
 
@@ -104,8 +95,6 @@ public class TeacherAddEvent extends AppCompatActivity {
 
         dateText = (EditText) findViewById(R.id.editDate);
 //listener
-
-
 
         //get current user
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

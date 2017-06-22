@@ -3,66 +3,84 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Adi/.android/build-cache/848508427c7a7247efc80acd6ac01cf303f39da3/output/jars/classes.jar"
+        jar="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="5c1f80f62ccad560edcd6609fc75f385cf7cb45a">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3b6c738aed0245cb01bc0dacf6726899bc738612/classes.dex" />
+        sha1="7cf99d5a3c49619b7feda90cd6da9435782e7150">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_27533b1453ce7ac7294506f26e2d69d05d9b2270/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/.android/build-cache/ee9bee9a20fd145c52f0450e574b7a442cc8fb80/output/jars/classes.jar"
+        jar="/Users/Adi/.android/build-cache/62a3637c8983acbbf42d867a123088231c24d6bc/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="de24d8023e8da79f30bee46b298f606e5e758432">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_08d45674d1c81df4f64472728cf48081df7fe7d1/classes.dex" />
+        sha1="eaac8b02a2373e238cab6fc514e4667204b64191">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b802c08083a1db02157594aa27a0d325273ec151/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/Desktop/IP Root/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/Adi/.android/build-cache/a5f0ad7159c01dd52ff699b051643df17e605bb7/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_af9395a052d361210e1ec988231c327df1e84b15/classes.dex" />
+        sha1="6dfa77c356a9a8c13ad61253ed95ed3a746527e6">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b90c286a9b45a333bc170d9f6622c4ccc08bc721/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/.android/build-cache/2b7c34197cf00cad9ce96c10530b75d844a7fb50/output/jars/classes.jar"
+        jar="/Users/Adi/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="9ff5114aff3bfb387577ba92a11408dcf0441c24">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff81d113d1893e8cd561a03b4cd8f19a09699f24/classes.dex" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_dbc6bd77ee7aae072cf47dfddb88153513c4db1d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/.android/build-cache/fa3f45d61d04964362aa8c97bd8d99dba72e6cd5/output/jars/classes.jar"
+        jar="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3dbaff65d26258306561d545f88d6712ac41dd46">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_71266029f647221709c8f0120c84ca240e085432/classes.dex" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_8aa3c7b34a3ce9fa57c6f213470f5f49fad4320f/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/Desktop/IP Root/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/Adi/.android/build-cache/b7f152a908cff4599b383dac8e60e3a9dbc2e662/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1c352c2234bb68dd7aac8b6e815fc12f5b2a7946">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_e20c6d7dbd96770d76d67f8d20cde975d0e57632/classes.dex" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_922cdbe5bdbdbe8eb10b08ef6bfd99b841797705/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Adi/.android/build-cache/53ce73ea8ed30e3b824a9558db13b48af121d507/output/jars/classes.jar"
+        jar="/Users/Adi/.android/build-cache/e1d60f6578d9ede3fae6df2cd199f38d4ab7b43b/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ba4defc8cb4ed5b90b8ef71602722cdeebe507cd">
-        <dex dex="/Users/Adi/Desktop/IP Root/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b1364e80afed19ea56e48dee5efcd42254546953/classes.dex" />
+        sha1="af26875652e085cd14713ff655bc3aa07960d459">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f49f3bf111aab98d610ccc3882b5729870f9d14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Adi/.android/build-cache/838c0025fad61d697e93b1990c9a396564563c0c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f351ee2e10aaf23a13b0fcd19788683d7dce6192">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68f3424dfbf06903c988a291ad40f43e0e614c28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Adi/.android/build-cache/921436a65c20be981079c3209990ca0bd8298182/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8723f4a84a0293f5e9ee76193e6bfec47137f048">
+        <dex dex="/Users/Adi/Desktop/IP Root copy/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b42c70d5ed42912d74f372fdfd54460ec482d51d/classes.dex" />
     </item>
 
 </items>

@@ -29,7 +29,6 @@ public class RemoveActivity extends AppCompatActivity {
     private FirebaseRecyclerAdapter<Data,PostviewHolder> firebaseRecyclerAdapter;
     private RecyclerView recylceview;
     private DatabaseReference mDatabase;
-    final Firebase ref1 = new Firebase("https://post-it-81fe6.firebaseio.com/");
 
 
     @Override

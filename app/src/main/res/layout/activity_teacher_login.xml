@@ -16,19 +16,15 @@
         android:orientation="vertical"
         android:padding="@dimen/activity_horizontal_margin">
 
-
-        <com.google.android.gms.common.SignInButton
+        <ImageButton
+            android:id="@+id/phoneAuthentication"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/google_signin_button">
+            android:padding="10dp"
+            android:src="@android:drawable/stat_sys_phone_call"
+            android:tag="Authenticate with phone"
+            android:background="@color/colorPrimaryDark"/>
 
-        </com.google.android.gms.common.SignInButton>
-
-        <com.facebook.login.widget.LoginButton
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:textSize="19sp"
-            android:id="@+id/facebook_signin_button"/>
     </LinearLayout>
 
     <ProgressBar
